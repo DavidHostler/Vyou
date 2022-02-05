@@ -10,7 +10,7 @@ class Post(models.Model):
     timestamp = models.DateTimeField(auto_now = True)
     longitude = models.FloatField(default = 0.00)
     latitude = models.FloatField(default = 0.00)
-    image = models.ImageField(upload_to = "images", default = "Empty")
+    #image = models.ImageField(upload_to = "images", default = "Empty")
 
     def __str__(self):
         return self.post_id
